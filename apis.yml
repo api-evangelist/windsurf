@@ -3,7 +3,11 @@ url: https://raw.githubusercontent.com/api-evangelist/windsurf/refs/heads/main/a
 name: Windsurf
 x-type: company
 description: >-
-  Windsurf is the AI-native code editor from Codeium, featuring Cascade — an agent that edits across files. Built on a VS Code base with proprietary inference and AI Flows for collaborative editing.
+  Windsurf (formerly Codeium) is the AI-native code editor and plugin family from the
+  Codeium team, featuring Cascade - an agentic chatbot that collaborates with the user
+  across files. Built on a VS Code base with proprietary inference, MCP server support,
+  Devin Cloud sessions, and the SWE-1.5 fast agent model. Plans range from Free / Light /
+  Pro / Max / Teams / Enterprise. No public REST API for application developers.
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
   - AI
@@ -11,13 +15,70 @@ tags:
   - Code Editor
   - Agent
   - Cascade
+  - IDE
+  - MCP
 created: '2026-05-08'
 modified: '2026-05-08'
 specificationVersion: '0.19'
-apis: []
+apis:
+  - aid: windsurf:editor
+    name: Windsurf Editor
+    description: >-
+      Standalone AI-native IDE forked from VS Code featuring Cascade agent, autocomplete
+      (Fill-In-The-Middle), Chat, Command, MCP server integration, and Devin Cloud
+      sessions for background development. SWE-1.5 fast agent model included.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://windsurf.com/editor
+    baseURL: https://windsurf.com
+    tags:
+      - Editor
+      - Cascade
+      - Autocomplete
+      - Agent
+    properties:
+      - type: ProductPage
+        url: https://windsurf.com/editor
+      - type: Documentation
+        url: https://docs.windsurf.com/
+  - aid: windsurf:plugins
+    name: Windsurf Plugins
+    description: >-
+      VS Code, JetBrains, Vim, Emacs, Visual Studio, Sublime Text plugins. Surface
+      autocomplete, chat, and command capabilities backed by Windsurf's hosted inference.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://windsurf.com/plugins
+    baseURL: https://windsurf.com
+    tags:
+      - Plugins
+      - IDE
+      - Autocomplete
+    properties:
+      - type: ProductPage
+        url: https://windsurf.com/plugins
+      - type: Documentation
+        url: https://docs.windsurf.com/
+  - aid: windsurf:enterprise
+    name: Windsurf Enterprise (Codeium for Enterprise)
+    description: >-
+      Self-hosted / managed enterprise SKU with admin dashboards, analytics, RBAC, and SSO.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://windsurf.com/enterprise
+    baseURL: https://windsurf.com
+    tags:
+      - Enterprise
+      - Self-Hosted
+      - SSO
+      - Analytics
+    properties:
+      - type: ProductPage
+        url: https://windsurf.com/enterprise
 common:
   - type: Website
     url: https://windsurf.com/
+  - type: Documentation
+    url: https://docs.windsurf.com/
+  - type: Pricing
+    url: https://windsurf.com/pricing
   - type: Plans
     url: plans/windsurf-plans-pricing.yml
   - type: RateLimits
