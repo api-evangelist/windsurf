@@ -1,0 +1,29 @@
+aid: windsurf
+url: https://raw.githubusercontent.com/api-evangelist/windsurf/refs/heads/main/apis.yml
+name: Windsurf
+x-type: company
+description: >-
+  Windsurf is the AI-native code editor from Codeium, featuring Cascade — an agent that edits across files. Built on a VS Code base with proprietary inference and AI Flows for collaborative editing.
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - AI
+  - Developer Tools
+  - Code Editor
+  - Agent
+  - Cascade
+created: '2026-05-08'
+modified: '2026-05-08'
+specificationVersion: '0.19'
+apis: []
+common:
+  - type: Website
+    url: https://windsurf.com/
+  - type: Plans
+    url: plans/windsurf-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/windsurf-rate-limits.yml
+  - type: FinOps
+    url: finops/windsurf-finops.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
