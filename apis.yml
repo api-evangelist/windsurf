@@ -85,6 +85,10 @@ common:
     url: rate-limits/windsurf-rate-limits.yml
   - type: FinOps
     url: finops/windsurf-finops.yml
+  - type: Integrations
+    url: https://windsurf.com/integrations
+integrations:
+  - name: JetBrains Plugin
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
