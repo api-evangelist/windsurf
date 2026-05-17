@@ -1,7 +1,7 @@
 aid: windsurf
 url: https://raw.githubusercontent.com/api-evangelist/windsurf/refs/heads/main/apis.yml
 name: Windsurf
-x-type: company
+kind: company
 description: >-
   Windsurf (formerly Codeium) is the AI-native code editor and plugin family from the
   Codeium team, featuring Cascade - an agentic chatbot that collaborates with the user
