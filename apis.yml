@@ -73,6 +73,8 @@ apis:
       - type: ProductPage
         url: https://windsurf.com/enterprise
 common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/windsurf123321
   - type: Website
     url: https://windsurf.com/
   - type: Documentation
