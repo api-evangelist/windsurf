@@ -1,0 +1,124 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Windsurf Enterprise Analytics API",
+    "version": "1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "Authorization",
+      "value": "{{Authorization}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "CascadeAnalytics",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get Cascade analytics",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://server.codeium.com/api/v1/CascadeAnalytics"
+          },
+          "docs": "Query Cascade-specific metrics including lines suggested/accepted, model usage, credit consumption, and tool usage statistics."
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "CustomAnalytics",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Custom analytics query",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://server.codeium.com/api/v1/AnalyticsQuery"
+          },
+          "docs": "Flexible analytics querying with custom selections, filters, and aggregations."
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "CreditBalance",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get team credit balance",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://server.codeium.com/api/v1/TeamCreditBalance"
+          },
+          "docs": "Retrieve the current credit balance for the team, including prompt credits per seat and add-on credits."
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "UsageConfiguration",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get usage configuration",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://server.codeium.com/api/v1/UsageConfiguration"
+          },
+          "docs": "Access per-user add-on credit cap configuration, queried by team, group, or individual user scope."
+        },
+        {
+          "info": {
+            "name": "Set usage configuration",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://server.codeium.com/api/v1/SetUsageConfiguration"
+          },
+          "docs": "Manage per-user add-on credit caps across a team, group, or individual user."
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "UserAnalytics",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get user page analytics",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://server.codeium.com/api/v1/UserPageAnalytics"
+          },
+          "docs": "Retrieve user activity statistics including names, emails, last activity times, and active days."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

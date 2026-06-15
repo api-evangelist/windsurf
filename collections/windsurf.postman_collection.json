@@ -1,0 +1,501 @@
+{
+  "item": [
+    {
+      "id": "bcef90d1-420d-4d20-8d95-2de00b530136",
+      "name": "CascadeAnalytics",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "5fec79ba-8d24-4248-a686-1b60461766aa",
+          "name": "Get Cascade analytics",
+          "request": {
+            "name": "Get Cascade analytics",
+            "description": {
+              "content": "Query Cascade-specific metrics including lines suggested/accepted, model usage, credit consumption, and tool usage statistics.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "CascadeAnalytics"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "4e173555-967d-484f-945f-c177bf78a3f4",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "CascadeAnalytics"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "80e2b65e-5660-4a9d-b5d8-6ec9b6de0d9f",
+      "name": "CustomAnalytics",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "1639360c-acad-4017-b612-cf58d824fdcc",
+          "name": "Custom analytics query",
+          "request": {
+            "name": "Custom analytics query",
+            "description": {
+              "content": "Flexible analytics querying with custom selections, filters, and aggregations.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "AnalyticsQuery"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "ac2ecd62-8166-4e9c-89a7-eb819d807c39",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "AnalyticsQuery"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "0747e07e-29ee-4ef3-9106-d123d14b8f1d",
+      "name": "CreditBalance",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "000380ad-151c-4e62-9696-aa5406ebc5ba",
+          "name": "Get team credit balance",
+          "request": {
+            "name": "Get team credit balance",
+            "description": {
+              "content": "Retrieve the current credit balance for the team, including prompt credits per seat and add-on credits.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "TeamCreditBalance"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "9ecb389a-5e7c-4758-92da-5eecbafc979d",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "TeamCreditBalance"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "82925841-221a-4882-add3-442c57c3ab2c",
+      "name": "UsageConfiguration",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "7412f585-e885-4b32-b9b3-6062015b44f0",
+          "name": "Get usage configuration",
+          "request": {
+            "name": "Get usage configuration",
+            "description": {
+              "content": "Access per-user add-on credit cap configuration, queried by team, group, or individual user scope.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "UsageConfiguration"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "0f958fb9-3123-4b98-aaef-121d4e22ea3a",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "UsageConfiguration"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "863e6536-5b40-4487-9f58-8a9449e3c983",
+          "name": "Set usage configuration",
+          "request": {
+            "name": "Set usage configuration",
+            "description": {
+              "content": "Manage per-user add-on credit caps across a team, group, or individual user.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "SetUsageConfiguration"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "2aa9767a-9592-40fb-a462-4f528853d70a",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "SetUsageConfiguration"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "b30a976f-34c0-417f-af50-a01d1f57e357",
+      "name": "UserAnalytics",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "01e42fdc-f4d5-4e16-8566-f749f6ea82ba",
+          "name": "Get user page analytics",
+          "request": {
+            "name": "Get user page analytics",
+            "description": {
+              "content": "Retrieve user activity statistics including names, emails, last activity times, and active days.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "UserPageAnalytics"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "2e56f1eb-f9d8-4021-84ec-e1af9015fc18",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "UserPageAnalytics"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://server.codeium.com/api/v1",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "Authorization"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "dca9b934-75ab-43b3-b0a3-eff8f1ac65cd",
+    "name": "Windsurf Enterprise Analytics API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Windsurf REST API for enterprise deployments providing access to Cascade analytics,\ncustom analytics queries, team credit balance, per-user usage configuration, and\nuser-level page analytics. Uses service key authentication.\n\n\nContact Support:\n Name: Windsurf",
+      "type": "text/plain"
+    }
+  }
+}
