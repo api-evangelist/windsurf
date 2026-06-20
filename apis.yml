@@ -8,7 +8,7 @@ description: >-
   across files. Built on a VS Code base with proprietary inference, MCP server support,
   Devin Cloud sessions, and the SWE-1.5 fast agent model. Plans range from Free / Light /
   Pro / Max / Teams / Enterprise. No public REST API for application developers.
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - AI
   - Developer Tools
@@ -27,7 +27,7 @@ apis:
       Standalone AI-native IDE forked from VS Code featuring Cascade agent, autocomplete
       (Fill-In-The-Middle), Chat, Command, MCP server integration, and Devin Cloud
       sessions for background development. SWE-1.5 fast agent model included.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://windsurf.com/editor
     baseURL: https://windsurf.com
     tags:
@@ -45,7 +45,7 @@ apis:
     description: >-
       VS Code, JetBrains, Vim, Emacs, Visual Studio, Sublime Text plugins. Surface
       autocomplete, chat, and command capabilities backed by Windsurf's hosted inference.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://windsurf.com/plugins
     baseURL: https://windsurf.com
     tags:
@@ -61,7 +61,7 @@ apis:
     name: Windsurf Enterprise (Codeium for Enterprise)
     description: >-
       Self-hosted / managed enterprise SKU with admin dashboards, analytics, RBAC, and SSO.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://windsurf.com/enterprise
     baseURL: https://windsurf.com
     tags:
