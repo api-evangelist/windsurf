@@ -89,7 +89,7 @@ common:
     url: finops/windsurf-finops.yml
   - type: Integrations
     url: https://windsurf.com/integrations
-  - type: LLMsTxt
+  - type: LlmsText
     url: https://docs.windsurf.com/llms.txt
 integrations:
   - name: JetBrains Plugin
