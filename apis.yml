@@ -73,6 +73,16 @@ apis:
       - type: ProductPage
         url: https://windsurf.com/enterprise
 common:
+  - type: TrustCenter
+    url: security/windsurf-trust-center.yml
+  - type: VulnerabilityDisclosure
+    url: security/windsurf-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/windsurf-domain-security.yml
+  - type: Authentication
+    url: authentication/windsurf-authentication.yml
+  - url: https://windsurf.com/feed.xml
+    type: Blog
   - type: LinkedIn
     url: https://www.linkedin.com/company/windsurf123321
   - type: Website
