@@ -73,6 +73,8 @@ apis:
       - type: ProductPage
         url: https://windsurf.com/enterprise
 common:
+  - type: AgenticAccess
+    url: agentic-access/windsurf-agentic-access.yml
   - type: TrustCenter
     url: security/windsurf-trust-center.yml
   - type: VulnerabilityDisclosure
