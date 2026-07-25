@@ -1,0 +1,49 @@
+openapi: 3.1.0
+info:
+  title: Windsurf Enterprise Analytics CascadeAnalytics UsageConfiguration API
+  description: 'Windsurf REST API for enterprise deployments providing access to Cascade analytics,
+
+    custom analytics queries, team credit balance, per-user usage configuration, and
+
+    user-level page analytics. Uses service key authentication.
+
+    '
+  version: '1.0'
+  contact:
+    name: Windsurf
+    url: https://docs.windsurf.com/
+servers:
+- url: https://server.codeium.com/api/v1
+  description: Windsurf API server
+security:
+- serviceKey: []
+tags:
+- name: UsageConfiguration
+paths:
+  /UsageConfiguration:
+    post:
+      tags:
+      - UsageConfiguration
+      summary: Get usage configuration
+      description: Access per-user add-on credit cap configuration, queried by team, group, or individual user scope.
+      operationId: getUsageConfiguration
+      responses:
+        '200':
+          description: OK
+  /SetUsageConfiguration:
+    post:
+      tags:
+      - UsageConfiguration
+      summary: Set usage configuration
+      description: Manage per-user add-on credit caps across a team, group, or individual user.
+      operationId: setUsageConfiguration
+      responses:
+        '200':
+          description: OK
+components:
+  securitySchemes:
+    serviceKey:
+      type: apiKey
+      in: header
+      name: Authorization
+      description: Service key authentication for Windsurf enterprise deployments

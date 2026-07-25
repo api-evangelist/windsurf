@@ -1,0 +1,39 @@
+openapi: 3.1.0
+info:
+  title: Windsurf Enterprise Analytics CascadeAnalytics CreditBalance API
+  description: 'Windsurf REST API for enterprise deployments providing access to Cascade analytics,
+
+    custom analytics queries, team credit balance, per-user usage configuration, and
+
+    user-level page analytics. Uses service key authentication.
+
+    '
+  version: '1.0'
+  contact:
+    name: Windsurf
+    url: https://docs.windsurf.com/
+servers:
+- url: https://server.codeium.com/api/v1
+  description: Windsurf API server
+security:
+- serviceKey: []
+tags:
+- name: CreditBalance
+paths:
+  /TeamCreditBalance:
+    post:
+      tags:
+      - CreditBalance
+      summary: Get team credit balance
+      description: Retrieve the current credit balance for the team, including prompt credits per seat and add-on credits.
+      operationId: getTeamCreditBalance
+      responses:
+        '200':
+          description: OK
+components:
+  securitySchemes:
+    serviceKey:
+      type: apiKey
+      in: header
+      name: Authorization
+      description: Service key authentication for Windsurf enterprise deployments
