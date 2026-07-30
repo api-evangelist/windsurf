@@ -8,7 +8,20 @@ description: >-
   across files. Built on a VS Code base with proprietary inference, MCP server support,
   Devin Cloud sessions, and the SWE-1.5 fast agent model. Plans range from Free / Light /
   Pro / Max / Teams / Enterprise. No public REST API for application developers.
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: high
+  source:
+  - plans
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/windsurf.png
 tags:
   - AI
   - Developer Tools
@@ -21,57 +34,106 @@ created: '2026-05-08'
 modified: '2026-05-08'
 specificationVersion: '0.19'
 apis:
-  - aid: windsurf:editor
-    name: Windsurf Editor
-    description: >-
-      Standalone AI-native IDE forked from VS Code featuring Cascade agent, autocomplete
-      (Fill-In-The-Middle), Chat, Command, MCP server integration, and Devin Cloud
-      sessions for background development. SWE-1.5 fast agent model included.
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    humanURL: https://windsurf.com/editor
-    baseURL: https://windsurf.com
-    tags:
-      - Editor
-      - Cascade
-      - Autocomplete
-      - Agent
-    properties:
-      - type: ProductPage
-        url: https://windsurf.com/editor
-      - type: Documentation
-        url: https://docs.windsurf.com/
-  - aid: windsurf:plugins
-    name: Windsurf Plugins
-    description: >-
-      VS Code, JetBrains, Vim, Emacs, Visual Studio, Sublime Text plugins. Surface
-      autocomplete, chat, and command capabilities backed by Windsurf's hosted inference.
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    humanURL: https://windsurf.com/plugins
-    baseURL: https://windsurf.com
-    tags:
-      - Plugins
-      - IDE
-      - Autocomplete
-    properties:
-      - type: ProductPage
-        url: https://windsurf.com/plugins
-      - type: Documentation
-        url: https://docs.windsurf.com/
-  - aid: windsurf:enterprise
-    name: Windsurf Enterprise (Codeium for Enterprise)
-    description: >-
-      Self-hosted / managed enterprise SKU with admin dashboards, analytics, RBAC, and SSO.
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    humanURL: https://windsurf.com/enterprise
-    baseURL: https://windsurf.com
-    tags:
-      - Enterprise
-      - Self-Hosted
-      - SSO
-      - Analytics
-    properties:
-      - type: ProductPage
-        url: https://windsurf.com/enterprise
+- aid: windsurf:editor
+  name: Windsurf Editor
+  description: >-
+    Standalone AI-native IDE forked from VS Code featuring Cascade agent, autocomplete (Fill-In-The-Middle),
+    Chat, Command, MCP server integration, and Devin Cloud sessions for background development. SWE-1.5
+    fast agent model included.
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://windsurf.com/editor
+  baseURL: https://windsurf.com
+  tags:
+  - Editor
+  - Cascade
+  - Autocomplete
+  - Agent
+  properties:
+  - type: ProductPage
+    url: https://windsurf.com/editor
+  - type: Documentation
+    url: https://docs.windsurf.com/
+- aid: windsurf:plugins
+  name: Windsurf Plugins
+  description: >-
+    VS Code, JetBrains, Vim, Emacs, Visual Studio, Sublime Text plugins. Surface autocomplete, chat, and
+    command capabilities backed by Windsurf's hosted inference.
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://windsurf.com/plugins
+  baseURL: https://windsurf.com
+  tags:
+  - Plugins
+  - IDE
+  - Autocomplete
+  properties:
+  - type: ProductPage
+    url: https://windsurf.com/plugins
+  - type: Documentation
+    url: https://docs.windsurf.com/
+- aid: windsurf:enterprise
+  name: Windsurf Enterprise (Codeium for Enterprise)
+  description: Self-hosted / managed enterprise SKU with admin dashboards, analytics, RBAC, and SSO.
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://windsurf.com/enterprise
+  baseURL: https://windsurf.com
+  tags:
+  - Enterprise
+  - Self-Hosted
+  - SSO
+  - Analytics
+  properties:
+  - type: ProductPage
+    url: https://windsurf.com/enterprise
+- aid: windsurf:windsurf-cascadeanalytics-api
+  name: Windsurf CascadeAnalytics API
+  description: The CascadeAnalytics API from Windsurf — 1 operation(s) for cascadeanalytics.
+  humanURL: https://windsurf.com/editor
+  baseURL: https://windsurf.com
+  tags:
+  - CascadeAnalytics
+  properties:
+  - type: OpenAPI
+    url: openapi/windsurf-cascadeanalytics-api-openapi.yml
+- aid: windsurf:windsurf-creditbalance-api
+  name: Windsurf CreditBalance API
+  description: The CreditBalance API from Windsurf — 1 operation(s) for creditbalance.
+  humanURL: https://windsurf.com/editor
+  baseURL: https://windsurf.com
+  tags:
+  - CreditBalance
+  properties:
+  - type: OpenAPI
+    url: openapi/windsurf-creditbalance-api-openapi.yml
+- aid: windsurf:windsurf-customanalytics-api
+  name: Windsurf CustomAnalytics API
+  description: The CustomAnalytics API from Windsurf — 1 operation(s) for customanalytics.
+  humanURL: https://windsurf.com/editor
+  baseURL: https://windsurf.com
+  tags:
+  - CustomAnalytics
+  properties:
+  - type: OpenAPI
+    url: openapi/windsurf-customanalytics-api-openapi.yml
+- aid: windsurf:windsurf-usageconfiguration-api
+  name: Windsurf UsageConfiguration API
+  description: The UsageConfiguration API from Windsurf — 2 operation(s) for usageconfiguration.
+  humanURL: https://windsurf.com/editor
+  baseURL: https://windsurf.com
+  tags:
+  - UsageConfiguration
+  properties:
+  - type: OpenAPI
+    url: openapi/windsurf-usageconfiguration-api-openapi.yml
+- aid: windsurf:windsurf-useranalytics-api
+  name: Windsurf UserAnalytics API
+  description: The UserAnalytics API from Windsurf — 1 operation(s) for useranalytics.
+  humanURL: https://windsurf.com/editor
+  baseURL: https://windsurf.com
+  tags:
+  - UserAnalytics
+  properties:
+  - type: OpenAPI
+    url: openapi/windsurf-useranalytics-api-openapi.yml
 common:
   - type: AgenticAccess
     url: agentic-access/windsurf-agentic-access.yml
