@@ -1,0 +1,78 @@
+openapi: 3.1.0
+info:
+  title: Windsurf Enterprise Analytics API
+  description: |
+    Windsurf REST API for enterprise deployments providing access to Cascade analytics,
+    custom analytics queries, team credit balance, per-user usage configuration, and
+    user-level page analytics. Uses service key authentication.
+  version: "1.0"
+  contact:
+    name: Windsurf
+    url: https://docs.windsurf.com/
+servers:
+  - url: https://server.codeium.com/api/v1
+    description: Windsurf API server
+security:
+  - serviceKey: []
+tags:
+  - name: CascadeAnalytics
+  - name: CustomAnalytics
+  - name: CreditBalance
+  - name: UsageConfiguration
+  - name: UserAnalytics
+paths:
+  /CascadeAnalytics:
+    post:
+      tags: [CascadeAnalytics]
+      summary: Get Cascade analytics
+      description: Query Cascade-specific metrics including lines suggested/accepted, model usage, credit consumption, and tool usage statistics.
+      operationId: getCascadeAnalytics
+      responses:
+        "200": { description: OK }
+  /AnalyticsQuery:
+    post:
+      tags: [CustomAnalytics]
+      summary: Custom analytics query
+      description: Flexible analytics querying with custom selections, filters, and aggregations.
+      operationId: customAnalyticsQuery
+      responses:
+        "200": { description: OK }
+  /TeamCreditBalance:
+    post:
+      tags: [CreditBalance]
+      summary: Get team credit balance
+      description: Retrieve the current credit balance for the team, including prompt credits per seat and add-on credits.
+      operationId: getTeamCreditBalance
+      responses:
+        "200": { description: OK }
+  /UsageConfiguration:
+    post:
+      tags: [UsageConfiguration]
+      summary: Get usage configuration
+      description: Access per-user add-on credit cap configuration, queried by team, group, or individual user scope.
+      operationId: getUsageConfiguration
+      responses:
+        "200": { description: OK }
+  /SetUsageConfiguration:
+    post:
+      tags: [UsageConfiguration]
+      summary: Set usage configuration
+      description: Manage per-user add-on credit caps across a team, group, or individual user.
+      operationId: setUsageConfiguration
+      responses:
+        "200": { description: OK }
+  /UserPageAnalytics:
+    post:
+      tags: [UserAnalytics]
+      summary: Get user page analytics
+      description: Retrieve user activity statistics including names, emails, last activity times, and active days.
+      operationId: getUserPageAnalytics
+      responses:
+        "200": { description: OK }
+components:
+  securitySchemes:
+    serviceKey:
+      type: apiKey
+      in: header
+      name: Authorization
+      description: Service key authentication for Windsurf enterprise deployments

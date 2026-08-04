@@ -1,0 +1,22 @@
+{
+  "provider": "windsurf",
+  "sources": [
+    "windsurf-cascadeanalytics-api-openapi.yml",
+    "windsurf-creditbalance-api-openapi.yml",
+    "windsurf-customanalytics-api-openapi.yml",
+    "windsurf-usageconfiguration-api-openapi.yml",
+    "windsurf-useranalytics-api-openapi.yml"
+  ],
+  "outputs": [
+    "windsurf-cascadeanalytics-api-openapi.yml",
+    "windsurf-creditbalance-api-openapi.yml",
+    "windsurf-customanalytics-api-openapi.yml",
+    "windsurf-usageconfiguration-api-openapi.yml",
+    "windsurf-useranalytics-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
