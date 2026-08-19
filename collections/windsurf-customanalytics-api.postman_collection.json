@@ -1,0 +1,117 @@
+{
+  "item": [
+    {
+      "id": "5e1e44bd-1977-477a-b677-67cde247b9a2",
+      "name": "CustomAnalytics",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "c80f972e-805d-47d0-b6fd-c5f0c200a314",
+          "name": "Custom analytics query",
+          "request": {
+            "name": "Custom analytics query",
+            "description": {
+              "content": "Flexible analytics querying with custom selections, filters, and aggregations.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "AnalyticsQuery"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "a0a8e12e-6363-486e-aa57-3e2c34d17ed5",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "AnalyticsQuery"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://server.codeium.com/api/v1",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "Authorization"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "a16c48a7-676e-48f1-899e-086c13a899d0",
+    "name": "Windsurf Enterprise Analytics CascadeAnalytics CustomAnalytics API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Windsurf REST API for enterprise deployments providing access to Cascade analytics,\ncustom analytics queries, team credit balance, per-user usage configuration, and\nuser-level page analytics. Uses service key authentication.\n\n\nContact Support:\n Name: Windsurf",
+      "type": "text/plain"
+    }
+  }
+}

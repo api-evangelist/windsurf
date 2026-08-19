@@ -1,0 +1,48 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Windsurf Enterprise Analytics CascadeAnalytics UsageConfiguration API",
+    "version": "1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "Authorization",
+      "value": "{{Authorization}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "UsageConfiguration",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get usage configuration",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://server.codeium.com/api/v1/UsageConfiguration"
+          },
+          "docs": "Access per-user add-on credit cap configuration, queried by team, group, or individual user scope."
+        },
+        {
+          "info": {
+            "name": "Set usage configuration",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://server.codeium.com/api/v1/SetUsageConfiguration"
+          },
+          "docs": "Manage per-user add-on credit caps across a team, group, or individual user."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

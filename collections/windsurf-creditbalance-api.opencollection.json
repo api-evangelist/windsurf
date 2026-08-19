@@ -1,0 +1,37 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Windsurf Enterprise Analytics CascadeAnalytics CreditBalance API",
+    "version": "1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "Authorization",
+      "value": "{{Authorization}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "CreditBalance",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get team credit balance",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://server.codeium.com/api/v1/TeamCreditBalance"
+          },
+          "docs": "Retrieve the current credit balance for the team, including prompt credits per seat and add-on credits."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

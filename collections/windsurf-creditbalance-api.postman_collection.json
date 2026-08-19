@@ -1,0 +1,117 @@
+{
+  "item": [
+    {
+      "id": "b5d26320-2ae7-46c1-bd2e-b117776f2574",
+      "name": "CreditBalance",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "a43a8ced-0d0d-4669-bf27-deb9d2ee741b",
+          "name": "Get team credit balance",
+          "request": {
+            "name": "Get team credit balance",
+            "description": {
+              "content": "Retrieve the current credit balance for the team, including prompt credits per seat and add-on credits.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "TeamCreditBalance"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "7ddd9055-d353-4da1-977b-51d757f941e2",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "TeamCreditBalance"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://server.codeium.com/api/v1",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "Authorization"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "01d8cfe2-06a7-44e4-a2ae-ca15f9a85cba",
+    "name": "Windsurf Enterprise Analytics CascadeAnalytics CreditBalance API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Windsurf REST API for enterprise deployments providing access to Cascade analytics,\ncustom analytics queries, team credit balance, per-user usage configuration, and\nuser-level page analytics. Uses service key authentication.\n\n\nContact Support:\n Name: Windsurf",
+      "type": "text/plain"
+    }
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "item": [
+    {
+      "id": "706c1ebb-4c67-4ebd-a56e-4d5d8cf91307",
+      "name": "CascadeAnalytics",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "bba29c3e-9289-428b-a12d-0fbaaa0fe77d",
+          "name": "Get Cascade analytics",
+          "request": {
+            "name": "Get Cascade analytics",
+            "description": {
+              "content": "Query Cascade-specific metrics including lines suggested/accepted, model usage, credit consumption, and tool usage statistics.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "CascadeAnalytics"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "b8101e38-b0c4-43ef-81c1-6d6f9f75d071",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "CascadeAnalytics"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://server.codeium.com/api/v1",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "Authorization"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "0882c65e-0964-4608-8aa5-7ce7dfbe5e29",
+    "name": "Windsurf Enterprise Analytics CascadeAnalytics API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Windsurf REST API for enterprise deployments providing access to Cascade analytics,\ncustom analytics queries, team credit balance, per-user usage configuration, and\nuser-level page analytics. Uses service key authentication.\n\n\nContact Support:\n Name: Windsurf",
+      "type": "text/plain"
+    }
+  }
+}

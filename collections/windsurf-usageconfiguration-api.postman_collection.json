@@ -1,0 +1,185 @@
+{
+  "item": [
+    {
+      "id": "037760dc-0e00-4d06-a624-a5b10512ddb8",
+      "name": "UsageConfiguration",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "f30cc01d-850b-401d-a7d0-cac6ebe77c1a",
+          "name": "Get usage configuration",
+          "request": {
+            "name": "Get usage configuration",
+            "description": {
+              "content": "Access per-user add-on credit cap configuration, queried by team, group, or individual user scope.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "UsageConfiguration"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "575cfe0c-5f7a-4d2b-9b3c-289630cf01c9",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "UsageConfiguration"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "8ea544a6-1433-42e2-b697-483728d97e32",
+          "name": "Set usage configuration",
+          "request": {
+            "name": "Set usage configuration",
+            "description": {
+              "content": "Manage per-user add-on credit caps across a team, group, or individual user.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "SetUsageConfiguration"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "c76c0915-fc0e-420d-9071-4ac789b11f49",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "SetUsageConfiguration"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://server.codeium.com/api/v1",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "Authorization"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "b216ec49-edb2-4196-b66f-46588fd4ecab",
+    "name": "Windsurf Enterprise Analytics CascadeAnalytics UsageConfiguration API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Windsurf REST API for enterprise deployments providing access to Cascade analytics,\ncustom analytics queries, team credit balance, per-user usage configuration, and\nuser-level page analytics. Uses service key authentication.\n\n\nContact Support:\n Name: Windsurf",
+      "type": "text/plain"
+    }
+  }
+}

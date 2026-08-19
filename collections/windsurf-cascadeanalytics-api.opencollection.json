@@ -1,0 +1,37 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Windsurf Enterprise Analytics CascadeAnalytics API",
+    "version": "1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "Authorization",
+      "value": "{{Authorization}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "CascadeAnalytics",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get Cascade analytics",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://server.codeium.com/api/v1/CascadeAnalytics"
+          },
+          "docs": "Query Cascade-specific metrics including lines suggested/accepted, model usage, credit consumption, and tool usage statistics."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
