@@ -23,6 +23,14 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/windsurf.png
 tags:
+  - Artificial Intelligence
+  - Developer Tools
+  - Code Editor
+  - Agents
+  - Cascade
+  - IDE
+  - MCP
+tags_raw:
   - AI
   - Developer Tools
   - Code Editor
@@ -44,6 +52,11 @@ apis:
   humanURL: https://windsurf.com/editor
   baseURL: https://windsurf.com
   tags:
+  - Editor
+  - Cascade
+  - Autocomplete
+  - Agents
+  tags_raw:
   - Editor
   - Cascade
   - Autocomplete
@@ -130,6 +143,8 @@ apis:
   humanURL: https://windsurf.com/editor
   baseURL: https://windsurf.com
   tags:
+  - User Analytics
+  tags_raw:
   - UserAnalytics
   properties:
   - type: OpenAPI
