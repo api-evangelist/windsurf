@@ -8,6 +8,18 @@ description: >-
   across files. Built on a VS Code base with proprietary inference, MCP server support,
   Devin Cloud sessions, and the SWE-1.5 fast agent model. Plans range from Free / Light /
   Pro / Max / Teams / Enterprise. No public REST API for application developers.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: true
+  label: Hosted service · you call their endpoint
+  confidence: high
+  source:
+  - openapi
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: self-serve
