@@ -155,7 +155,7 @@ apis:
   humanURL: https://windsurf.com/editor
   baseURL: https://windsurf.com
   tags:
-  - User Analytics
+  - UserAnalytics
   tags_raw:
   - UserAnalytics
   properties:
