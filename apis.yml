@@ -2,12 +2,10 @@ aid: windsurf
 url: https://raw.githubusercontent.com/api-evangelist/windsurf/refs/heads/main/apis.yml
 name: Windsurf
 kind: company
-description: >-
-  Windsurf (formerly Codeium) is the AI-native code editor and plugin family from the
-  Codeium team, featuring Cascade - an agentic chatbot that collaborates with the user
-  across files. Built on a VS Code base with proprietary inference, MCP server support,
-  Devin Cloud sessions, and the SWE-1.5 fast agent model. Plans range from Free / Light /
-  Pro / Max / Teams / Enterprise. No public REST API for application developers.
+description: Windsurf (formerly Codeium) is the AI-native code editor and plugin family from the Codeium team, featuring
+  Cascade - an agentic chatbot that collaborates with the user across files. Built on a VS Code base with proprietary
+  inference, MCP server support, Devin Cloud sessions, and the SWE-1.5 fast agent model. Plans range from Free /
+  Light / Pro / Max / Teams / Enterprise. No public REST API for application developers.
 deliveryModel:
   model: saas
   open_source: false
@@ -22,44 +20,44 @@ deliveryModel:
   method: derived
 accessModel:
   pricing: unknown
-  onboarding: self-serve
+  onboarding: unknown
   trial: false
   try_now: false
   public: false
-  label: Self-serve signup
-  confidence: high
+  label: Unknown
+  confidence: low
   source:
   - plans
   - authentication
-  generated: '2026-07-22'
+  - security
+  generated: '2026-09-03'
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/windsurf.png
 tags:
-  - Artificial Intelligence
-  - Developer Tools
-  - Code Editor
-  - Agents
-  - Cascade
-  - IDE
-  - MCP
+- Artificial Intelligence
+- Developer Tools
+- Code Editor
+- Agents
+- Cascade
+- IDE
+- MCP
 tags_raw:
-  - AI
-  - Developer Tools
-  - Code Editor
-  - Agent
-  - Cascade
-  - IDE
-  - MCP
+- AI
+- Developer Tools
+- Code Editor
+- Agent
+- Cascade
+- IDE
+- MCP
 created: '2026-05-08'
 modified: '2026-05-08'
 specificationVersion: '0.23'
 apis:
 - aid: windsurf:editor
   name: Windsurf Editor
-  description: >-
-    Standalone AI-native IDE forked from VS Code featuring Cascade agent, autocomplete (Fill-In-The-Middle),
-    Chat, Command, MCP server integration, and Devin Cloud sessions for background development. SWE-1.5
-    fast agent model included.
+  description: Standalone AI-native IDE forked from VS Code featuring Cascade agent, autocomplete (Fill-In-The-Middle),
+    Chat, Command, MCP server integration, and Devin Cloud sessions for background development. SWE-1.5 fast agent
+    model included.
   image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
   humanURL: https://windsurf.com/editor
   baseURL: https://windsurf.com
@@ -80,9 +78,8 @@ apis:
     url: https://docs.windsurf.com/
 - aid: windsurf:plugins
   name: Windsurf Plugins
-  description: >-
-    VS Code, JetBrains, Vim, Emacs, Visual Studio, Sublime Text plugins. Surface autocomplete, chat, and
-    command capabilities backed by Windsurf's hosted inference.
+  description: VS Code, JetBrains, Vim, Emacs, Visual Studio, Sublime Text plugins. Surface autocomplete, chat,
+    and command capabilities backed by Windsurf's hosted inference.
   image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
   humanURL: https://windsurf.com/plugins
   baseURL: https://windsurf.com
@@ -161,39 +158,85 @@ apis:
   properties:
   - type: OpenAPI
     url: openapi/windsurf-useranalytics-api-openapi.yml
-common:
-  - type: AgenticAccess
-    url: agentic-access/windsurf-agentic-access.yml
-  - type: TrustCenter
-    url: security/windsurf-trust-center.yml
-  - type: VulnerabilityDisclosure
-    url: security/windsurf-vulnerability-disclosure.yml
-  - type: DomainSecurity
-    url: security/windsurf-domain-security.yml
-  - type: Authentication
-    url: authentication/windsurf-authentication.yml
-  - url: https://windsurf.com/feed.xml
-    type: Blog
-  - type: LinkedIn
-    url: https://www.linkedin.com/company/windsurf123321
-  - type: Website
-    url: https://windsurf.com/
+- aid: windsurf:windsurfrules-analytics-api
+  name: Windsurf analytics API
+  description: Code completion and Cascade AI usage analytics
+  humanURL: https://docs.windsurf.com/plugins/accounts/api-reference/api-introduction
+  baseURL: https://server.codeium.com/api/v1
+  tags:
+  - Analytics
+  tags_raw:
+  - analytics
+  properties:
+  - type: OpenAPI
+    url: openapi/windsurfrules-analytics-api-openapi.yml
   - type: Documentation
-    url: https://docs.windsurf.com/
-  - type: Pricing
-    url: https://windsurf.com/pricing
-  - type: Plans
-    url: plans/windsurf-plans-pricing.yml
-  - type: RateLimits
-    url: rate-limits/windsurf-rate-limits.yml
-  - type: FinOps
-    url: finops/windsurf-finops.yml
-  - type: Integrations
-    url: https://windsurf.com/integrations
-  - type: LlmsText
-    url: https://docs.windsurf.com/llms.txt
+    url: https://docs.windsurf.com/plugins/accounts/api-reference/api-introduction
+- aid: windsurf:windsurfrules-billing-api
+  name: Windsurf billing API
+  description: Usage configuration and credit balance management
+  humanURL: https://docs.windsurf.com/plugins/accounts/api-reference/api-introduction
+  baseURL: https://server.codeium.com/api/v1
+  tags:
+  - Billing
+  tags_raw:
+  - billing
+  properties:
+  - type: OpenAPI
+    url: openapi/windsurfrules-billing-api-openapi.yml
+  - type: Documentation
+    url: https://docs.windsurf.com/plugins/accounts/api-reference/api-introduction
+- aid: windsurf:windsurfrules-teams-api
+  name: Windsurf teams API
+  description: Team and user analytics
+  humanURL: https://docs.windsurf.com/plugins/accounts/api-reference/api-introduction
+  baseURL: https://server.codeium.com/api/v1
+  tags:
+  - Team
+  tags_raw:
+  - teams
+  properties:
+  - type: OpenAPI
+    url: openapi/windsurfrules-teams-api-openapi.yml
+  - type: Documentation
+    url: https://docs.windsurf.com/plugins/accounts/api-reference/api-introduction
+common:
+- type: AgenticAccess
+  url: agentic-access/windsurf-agentic-access.yml
+- type: TrustCenter
+  url: security/windsurf-trust-center.yml
+- type: VulnerabilityDisclosure
+  url: security/windsurf-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/windsurf-domain-security.yml
+- type: Authentication
+  url: authentication/windsurf-authentication.yml
+- url: https://windsurf.com/feed.xml
+  type: Blog
+- type: LinkedIn
+  url: https://www.linkedin.com/company/windsurf123321
+- type: Website
+  url: https://windsurf.com/
+- type: Documentation
+  url: https://docs.windsurf.com/
+- type: Pricing
+  url: https://windsurf.com/pricing
+- type: Plans
+  url: plans/windsurf-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/windsurf-rate-limits.yml
+- type: FinOps
+  url: finops/windsurf-finops.yml
+- type: Integrations
+  url: https://windsurf.com/integrations
+- type: LlmsText
+  url: https://docs.windsurf.com/llms.txt
+- type: APIReference
+  url: https://docs.windsurf.com/plugins/accounts/api-reference/api-introduction
+- type: Blog
+  url: https://windsurf.com/blog
 integrations:
-  - name: JetBrains Plugin
+- name: JetBrains Plugin
 maintainers:
-  - FN: Kin Lane
-    email: kin@apievangelist.com
+- FN: Kin Lane
+  email: kin@apievangelist.com
