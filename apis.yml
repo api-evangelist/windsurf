@@ -55,9 +55,10 @@ specificationVersion: '0.23'
 apis:
 - aid: windsurf:editor
   name: Windsurf Editor
-  description: Standalone AI-native IDE forked from VS Code featuring Cascade agent, autocomplete (Fill-In-The-Middle),
-    Chat, Command, MCP server integration, and Devin Cloud sessions for background development. SWE-1.5 fast agent
-    model included.
+  description: >-
+    Standalone AI-native IDE forked from VS Code featuring Cascade agent, autocomplete (Fill-In-The-Middle),
+    Chat, Command, MCP server integration, and Devin Cloud sessions for background development. SWE-1.5
+    fast agent model included.
   image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
   humanURL: https://windsurf.com/editor
   baseURL: https://windsurf.com
@@ -78,8 +79,9 @@ apis:
     url: https://docs.windsurf.com/
 - aid: windsurf:plugins
   name: Windsurf Plugins
-  description: VS Code, JetBrains, Vim, Emacs, Visual Studio, Sublime Text plugins. Surface autocomplete, chat,
-    and command capabilities backed by Windsurf's hosted inference.
+  description: >-
+    VS Code, JetBrains, Vim, Emacs, Visual Studio, Sublime Text plugins. Surface autocomplete, chat, and
+    command capabilities backed by Windsurf's hosted inference.
   image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
   humanURL: https://windsurf.com/plugins
   baseURL: https://windsurf.com
@@ -146,60 +148,16 @@ apis:
   properties:
   - type: OpenAPI
     url: openapi/windsurf-usageconfiguration-api-openapi.yml
-- aid: windsurf:windsurf-useranalytics-api
-  name: Windsurf UserAnalytics API
-  description: The UserAnalytics API from Windsurf — 1 operation(s) for useranalytics.
+- aid: windsurf:windsurf-user-analytics-api
+  name: Windsurf User Analytics API
+  description: The User Analytics API from Windsurf — 1 operation(s) for user analytics.
   humanURL: https://windsurf.com/editor
   baseURL: https://windsurf.com
   tags:
   - User Analytics
-  tags_raw:
-  - UserAnalytics
   properties:
   - type: OpenAPI
-    url: openapi/windsurf-useranalytics-api-openapi.yml
-- aid: windsurf:windsurfrules-analytics-api
-  name: Windsurf analytics API
-  description: Code completion and Cascade AI usage analytics
-  humanURL: https://docs.windsurf.com/plugins/accounts/api-reference/api-introduction
-  baseURL: https://server.codeium.com/api/v1
-  tags:
-  - Analytics
-  tags_raw:
-  - analytics
-  properties:
-  - type: OpenAPI
-    url: openapi/windsurfrules-analytics-api-openapi.yml
-  - type: Documentation
-    url: https://docs.windsurf.com/plugins/accounts/api-reference/api-introduction
-- aid: windsurf:windsurfrules-billing-api
-  name: Windsurf billing API
-  description: Usage configuration and credit balance management
-  humanURL: https://docs.windsurf.com/plugins/accounts/api-reference/api-introduction
-  baseURL: https://server.codeium.com/api/v1
-  tags:
-  - Billing
-  tags_raw:
-  - billing
-  properties:
-  - type: OpenAPI
-    url: openapi/windsurfrules-billing-api-openapi.yml
-  - type: Documentation
-    url: https://docs.windsurf.com/plugins/accounts/api-reference/api-introduction
-- aid: windsurf:windsurfrules-teams-api
-  name: Windsurf teams API
-  description: Team and user analytics
-  humanURL: https://docs.windsurf.com/plugins/accounts/api-reference/api-introduction
-  baseURL: https://server.codeium.com/api/v1
-  tags:
-  - Team
-  tags_raw:
-  - teams
-  properties:
-  - type: OpenAPI
-    url: openapi/windsurfrules-teams-api-openapi.yml
-  - type: Documentation
-    url: https://docs.windsurf.com/plugins/accounts/api-reference/api-introduction
+    url: openapi/windsurf-user-analytics-api-openapi.yml
 common:
 - type: AgenticAccess
   url: agentic-access/windsurf-agentic-access.yml
