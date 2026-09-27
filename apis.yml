@@ -61,7 +61,6 @@ apis:
     fast agent model included.
   image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
   humanURL: https://windsurf.com/editor
-  baseURL: https://windsurf.com
   tags:
   - Editor
   - Cascade
@@ -84,7 +83,6 @@ apis:
     command capabilities backed by Windsurf's hosted inference.
   image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
   humanURL: https://windsurf.com/plugins
-  baseURL: https://windsurf.com
   tags:
   - Plugins
   - IDE
@@ -99,7 +97,6 @@ apis:
   description: Self-hosted / managed enterprise SKU with admin dashboards, analytics, RBAC, and SSO.
   image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
   humanURL: https://windsurf.com/enterprise
-  baseURL: https://windsurf.com
   tags:
   - Enterprise
   - Self-Hosted
@@ -112,7 +109,7 @@ apis:
   name: Windsurf CascadeAnalytics API
   description: The CascadeAnalytics API from Windsurf — 1 operation(s) for cascadeanalytics.
   humanURL: https://windsurf.com/editor
-  baseURL: https://windsurf.com
+  baseURL: https://server.codeium.com/api/v1
   tags:
   - CascadeAnalytics
   properties:
@@ -122,7 +119,7 @@ apis:
   name: Windsurf CreditBalance API
   description: The CreditBalance API from Windsurf — 1 operation(s) for creditbalance.
   humanURL: https://windsurf.com/editor
-  baseURL: https://windsurf.com
+  baseURL: https://server.codeium.com/api/v1
   tags:
   - CreditBalance
   properties:
@@ -132,7 +129,7 @@ apis:
   name: Windsurf CustomAnalytics API
   description: The CustomAnalytics API from Windsurf — 1 operation(s) for customanalytics.
   humanURL: https://windsurf.com/editor
-  baseURL: https://windsurf.com
+  baseURL: https://server.codeium.com/api/v1
   tags:
   - CustomAnalytics
   properties:
@@ -142,7 +139,7 @@ apis:
   name: Windsurf UsageConfiguration API
   description: The UsageConfiguration API from Windsurf — 2 operation(s) for usageconfiguration.
   humanURL: https://windsurf.com/editor
-  baseURL: https://windsurf.com
+  baseURL: https://server.codeium.com/api/v1
   tags:
   - UsageConfiguration
   properties:
@@ -152,7 +149,7 @@ apis:
   name: Windsurf User Analytics API
   description: The User Analytics API from Windsurf — 1 operation(s) for user analytics.
   humanURL: https://windsurf.com/editor
-  baseURL: https://windsurf.com
+  baseURL: https://server.codeium.com/api/v1
   tags:
   - User Analytics
   properties:
