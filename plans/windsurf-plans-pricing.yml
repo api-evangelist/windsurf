@@ -1,44 +1,57 @@
-specification: API Commons Plans
-specificationVersion: '0.1'
-schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/Plans
-provider: Windsurf
-providerId: windsurf
-created: '2026-05-08'
-# Provenance stamped 2026-08-11: this artifact was written by the API Evangelist
-# bulk sweep dated 2026-05-08, not harvested from the provider. See roadmap#35.
-method: generated
-modified: '2026-05-08'
-reconciled: false
-tags:
-- AI
-- Developer Tools
-- Code Editor
-- Agent
-- Cascade
-- Plans
-description: Placeholder plans/pricing artifact for Windsurf. Replace with real published pricing once
-  the pipeline researches the provider's plans page.
-notes: Initial scaffold — plans/pricing have not yet been reconciled against the provider's documentation.
+# Pricing transcribed from the provider's own page — see provenance. Numbers are quoted, not derived.
+generated: '2026-10-07'
+method: searched
+source: https://devin.ai/pricing
 sources:
-- https://windsurf.com/
+- https://devin.ai/pricing
+- https://windsurf.com/pricing
+provenance:
+  tool: all/0-working/economics/harvest_pricing.py
+  run: 20261007T104522
+  grounding: every price_text was found verbatim in the fetched page text
+audience: business-product
+pricing_basis: tiered-subscription
+delivery:
+  delivery: managed+licensed
+  method: page
+  read: '2026-10-07'
+  evidence: Deploy in your virtual private cloud (VPC)
+  managed_tier: Pro
+published: true
+note: Devin (Cognition) plans page; usage quotas refresh daily/weekly, extra usage billed at API pricing.
+plan_count: 5
+currency: USD
 plans:
-- id: windsurf-default
-  name: To Be Reconciled
-  type: enterprise
-  description: Initial scaffold; replace with provider plan tiers once pricing is reconciled.
-  entries:
-  - label: API Access
-    name: api_access
-    type: flat
-    metric: varies
-    limit: -1
-    timeFrame: usage
-    geo: global
-    unit: 1
-    price: see https://windsurf.com/
-    userMultiplied: false
-  elements:
-  - name: Pending Reconciliation
-maintainers:
-- FN: Kin Lane
-  email: kin@apievangelist.com
+- name: Free
+  price_text: $0
+  price: 0
+  currency: USD
+  period: month
+  included_quota: Light quota to code with agents, limited model availability, unlimited inline edits,
+    unlimited Tab completions
+- name: Pro
+  price_text: $20 per month
+  price: 20
+  currency: USD
+  period: month
+  included_quota: Increased quotas, full model availability, access to cloud agents (Devin Cloud)
+  overage: Purchase extra usage at API pricing
+- name: Max
+  price_text: $200 per month
+  price: 200
+  currency: USD
+  period: month
+  included_quota: Everything in Pro, plus significantly higher quotas
+  overage: Purchase extra usage at API pricing
+- name: Teams
+  price_text: $80 /month for team plan + $40/mo per full dev seat
+  currency: USD
+  period: month
+  unit: team plan + per full dev seat
+  included_quota: Up to 200 users, sharing, centralized billing, admin dashboard, priority support
+- name: Enterprise
+  price_text: Let's talk
+  period: none
+  included_quota: Dedicated deployment option, SAML/OIDC SSO, enterprise admin controls
+rate_limit_statements:
+- Concurrent sessions limit Up to 10 Up to 10 Unlimited Unlimited
