@@ -2,8 +2,8 @@
   "repo": "windsurf",
   "feeds": [
     {
-      "source": "https://docs.windsurf.com/plugins/accounts/api-reference/api-introduction",
-      "feed_url": "https://docs.windsurf.com/plugins/accounts/api-reference/api-introduction",
+      "source": "https://windsurf.com/blog",
+      "feed_url": "https://windsurf.com/blog",
       "title": "",
       "saved": 0,
       "method": "none"
@@ -14,9 +14,16 @@
       "title": "",
       "saved": 0,
       "method": "feed"
+    },
+    {
+      "source": "https://docs.windsurf.com/plugins/accounts/api-reference/api-introduction",
+      "feed_url": "https://docs.windsurf.com/plugins/accounts/api-reference/api-introduction",
+      "title": "",
+      "saved": 0,
+      "method": "none"
     }
   ],
-  "fetched": "2026-10-03T12:30:02Z",
+  "fetched": "2026-10-10T13:15:00Z",
   "post_count": 46,
   "feed_nature": "vendor-blog",
   "feed_nature_basis": "path_blog",
