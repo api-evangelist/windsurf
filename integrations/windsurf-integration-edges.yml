@@ -2,6 +2,7 @@ generated: '2026-10-14'
 method: searched
 checked:
 - https://plugins.jetbrains.com/
+- netlify/integrations/netlify-integration-edges.yml
 marketplace_apps: []
 edges:
 - partner_name: JetBrains Marketplace
@@ -23,5 +24,23 @@ edges:
   - Verified vendor
   detected_by: sweep-devtools.py
   detected: '2026-10-14'
+- partner_name: Netlify (own)
+  partner: netlify
+  partner_match: mirror
+  mirror_match: domain+name-among-holders
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://www.netlify.com/integrations/windsurf/
+  mirror_of: netlify/integrations/netlify-integration-edges.yml
+  apps:
+  - Windsurf
+  listing_count: 1
+  detected: '2026-10-22'
+  detected_by: mirror-platform-listings.py
+  category: Search
+  partner_tier: listing
 source:
 - https://plugins.jetbrains.com/
