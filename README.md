@@ -1,4 +1,4 @@
-# Windsurf (windsurf)
+# Windsurf
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,99 +66,138 @@
 
 Windsurf (formerly Codeium) is the AI-native code editor and plugin family from the Codeium team, featuring Cascade - an agentic chatbot that collaborates with the user across files. Built on a VS Code base with proprietary inference, MCP server support, Devin Cloud sessions, and the SWE-1.5 fast agent model. Plans range from Free / Light / Pro / Max / Teams / Enterprise. No public REST API for application developers.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/windsurf/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/windsurf/refs/heads/main/apis.yml)
+**Areas:** Artificial Intelligence · Developer Tools · Code Editor · Agents · Cascade · IDE · MCP
 
-## Tags
+## Windsurf on APIs.io
 
-- AI
-- Developer Tools
-- Code Editor
-- Agent
-- Cascade
-- IDE
-- MCP
+Everything profiled for Windsurf is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/windsurf/](https://apis.io/providers/windsurf/)** — or go straight to one of the APIs or properties below.
 
-## Timestamps
+### APIs (8)
 
-- **Created:** 2026-05-08
-- **Modified:** 2026-05-08
+- [Windsurf Editor](https://apis.io/apis/windsurf/editor/) — Standalone AI-native IDE forked from VS Code featuring Cascade agent, autocomplete (Fill-In-The-Middle), Chat, Command, MCP server integration, and Devin…
+- [Windsurf Plugins](https://apis.io/apis/windsurf/plugins/) — VS Code, JetBrains, Vim, Emacs, Visual Studio, Sublime Text plugins. Surface autocomplete, chat, and command capabilities backed by Windsurf's hosted inference.
+- [Windsurf Enterprise (Codeium for Enterprise)](https://apis.io/apis/windsurf/enterprise/) — Self-hosted / managed enterprise SKU with admin dashboards, analytics, RBAC, and SSO.
+- [Windsurf CascadeAnalytics API](https://apis.io/apis/windsurf/windsurf-cascadeanalytics-api/) — The CascadeAnalytics API from Windsurf — 1 operation(s) for cascadeanalytics.
+- [Windsurf CreditBalance API](https://apis.io/apis/windsurf/windsurf-creditbalance-api/) — The CreditBalance API from Windsurf — 1 operation(s) for creditbalance.
+- [Windsurf CustomAnalytics API](https://apis.io/apis/windsurf/windsurf-customanalytics-api/) — The CustomAnalytics API from Windsurf — 1 operation(s) for customanalytics.
+- [Windsurf UsageConfiguration API](https://apis.io/apis/windsurf/windsurf-usageconfiguration-api/) — The UsageConfiguration API from Windsurf — 2 operation(s) for usageconfiguration.
+- [Windsurf User Analytics API](https://apis.io/apis/windsurf/windsurf-user-analytics-api/) — The User Analytics API from Windsurf — 1 operation(s) for user analytics.
 
-## APIs
+### Published properties
 
-### Windsurf Editor
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-Standalone AI-native IDE forked from VS Code featuring Cascade agent, autocomplete (Fill-In-The-Middle), Chat, Command, MCP server integration, and Devin Cloud sessions for background development. SWE-1.5 fast agent model included.
+#### MCP servers (1)
 
-- **Human URL:** [https://windsurf.com/editor](https://windsurf.com/editor)
-- **Base URL:** `https://windsurf.com`
+Model Context Protocol servers that expose the API to agents.
 
-#### Tags
+- [windsurf](https://apis.io/servers/windsurf/windsurf/)
 
-- Editor
-- Cascade
-- Autocomplete
-- Agent
+#### Agentic access (1)
 
-#### Properties
+Which operations an agent can call, which act, and which need a human in the loop.
 
-- [Product Page](https://windsurf.com/editor)
-- [Documentation](https://docs.windsurf.com/)
-- [Postman Collection](collections/windsurf.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/windsurf.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+- [Windsurf Agentic Access](https://apis.io/agentic-access/windsurf/windsurf-agentic-access/)
 
-### Windsurf Plugins
+#### Collections (6)
 
-VS Code, JetBrains, Vim, Emacs, Visual Studio, Sublime Text plugins. Surface autocomplete, chat, and command capabilities backed by Windsurf's hosted inference.
+Postman and Open Collection request collections.
 
-- **Human URL:** [https://windsurf.com/plugins](https://windsurf.com/plugins)
-- **Base URL:** `https://windsurf.com`
+- [Windsurf Enterprise Analytics API](https://apis.io/collections/windsurf/open-windsurf/)
+- [Windsurf Enterprise Analytics CascadeAnalytics API](https://apis.io/collections/windsurf/open-windsurf-cascadeanalytics-api/)
+- [Windsurf Enterprise Analytics CascadeAnalytics CreditBalance API](https://apis.io/collections/windsurf/open-windsurf-creditbalance-api/)
+- [Windsurf Enterprise Analytics CascadeAnalytics CustomAnalytics API](https://apis.io/collections/windsurf/open-windsurf-customanalytics-api/)
+- [Windsurf Enterprise Analytics CascadeAnalytics UsageConfiguration API](https://apis.io/collections/windsurf/open-windsurf-usageconfiguration-api/)
+- [Windsurf Enterprise Analytics CascadeAnalytics UserAnalytics API](https://apis.io/collections/windsurf/open-windsurf-useranalytics-api/)
 
-#### Tags
+#### Security (4)
 
-- Plugins
-- IDE
-- Autocomplete
+Authentication, trust centre, and vulnerability disclosure.
 
-#### Properties
+- [Windsurf Authentication](https://apis.io/security/windsurf/windsurf-authentication/)
+- [Windsurf Domain Security](https://apis.io/security/windsurf/windsurf-domain-security/)
+- [Windsurf Trust Center](https://apis.io/security/windsurf/windsurf-trust-center/)
+- [Windsurf Vulnerability Disclosure](https://apis.io/security/windsurf/windsurf-vulnerability-disclosure/)
 
-- [Product Page](https://windsurf.com/plugins)
-- [Documentation](https://docs.windsurf.com/)
-- [Postman Collection](collections/windsurf.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/windsurf.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+#### Plans and pricing (1)
 
-### Windsurf Enterprise (Codeium for Enterprise)
+Published plans, tiers and prices.
 
-Self-hosted / managed enterprise SKU with admin dashboards, analytics, RBAC, and SSO.
+- [Windsurf Plans Pricing](https://apis.io/plans/windsurf/windsurf-plans-pricing/)
 
-- **Human URL:** [https://windsurf.com/enterprise](https://windsurf.com/enterprise)
-- **Base URL:** `https://windsurf.com`
+#### Rate limits (1)
 
-#### Tags
+Published request limits.
 
-- Enterprise
-- Self-Hosted
-- SSO
-- Analytics
+- [Windsurf Rate Limits](https://apis.io/rate-limits/windsurf/windsurf-rate-limits/)
 
-#### Properties
+#### FinOps (1)
 
-- [Product Page](https://windsurf.com/enterprise)
-- [Postman Collection](collections/windsurf.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/windsurf.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+What the API costs to run, by operation.
 
-## Common Properties
+- [Windsurf Finops](https://apis.io/finops/windsurf/windsurf-finops/)
 
-- [LinkedIn](https://www.linkedin.com/company/windsurf123321)
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
 - [Website](https://windsurf.com/)
 - [Documentation](https://docs.windsurf.com/)
+- [API reference](https://docs.windsurf.com/plugins/accounts/api-reference/api-introduction)
 - [Pricing](https://windsurf.com/pricing)
-- [Plans](plans/windsurf-plans-pricing.yml)
-- [Rate Limits](rate-limits/windsurf-rate-limits.yml)
-- [Fin Ops](finops/windsurf-finops.yml)
-- [Integrations](https://windsurf.com/integrations)
-- [L L Ms Txt](https://docs.windsurf.com/llms.txt)
+- [Blog](https://windsurf.com/feed.xml)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 36.0** — thin · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.7 |
+| Contract quality | 49.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 15.8 |
+| Developer ergonomics | 29.8 |
+| Access clarity | 44.7 |
+
+**Agent readiness 28.1** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | — |
+| MCP Server | verified |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | distinct |
+
+**Regulatory alignment 20.9** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/windsurf/](https://apis.io/providers/windsurf/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Windsurf: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/windsurf/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
